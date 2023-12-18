@@ -10,6 +10,7 @@ import Item from './featureItem';
 import Bone from '../../components/bone';
 import homeConfig from '../../../site_config/home.jsx';
 import './index.scss';
+// import MseArc from '../../../umd/mse-arc-ui.min.js'
 
 class Home extends Language {
 
@@ -65,7 +66,7 @@ class Home extends Language {
           <div className="top-body">
             <div className="vertical-middle">
               <div className="product-name">
-                <h2>{dataSource.brand.brandName}</h2>
+                <img src={getLink(dataSource.brand.brandLogoUrl)} />
               </div>
               <p className="product-desc">
                 {dataSource.brand.briefIntroduction}
@@ -157,6 +158,12 @@ class Home extends Language {
             <div className="img-wrapper">
               <img src={getLink(dataSource.introduction.img)} />
             </div>
+          </div>
+        </section>
+        <section className="msemap-section">
+          <div className="msemap-container">
+            <h3>{dataSource.landscape.title}</h3>
+            <div id="mse-arc-container"></div>
           </div>
         </section>
         <section className="feature-section">

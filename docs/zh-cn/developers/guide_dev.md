@@ -10,12 +10,28 @@ description: 如果您有兴趣攻克Higress，欢迎您。首先，我们非常
 
 ## 话题
 
-* [报告安全问题](#报告安全问题) 
-* [报告一般问题](#报告一般问题) 
-* [代码和文档贡献](#代码和文档贡献) 
-* [测试用例贡献](#测试用例贡献)
-* [致力于帮助任何事情](#致力于帮助任何事情)
-* [代码风格](#代码风格)
+- [为Higress贡献](#为higress贡献)
+  - [话题](#话题)
+  - [贡献插件](#贡献插件)
+  - [报告安全问题](#报告安全问题)
+  - [报告一般问题](#报告一般问题)
+  - [代码和文档贡献](#代码和文档贡献)
+    - [工作准备](#工作准备)
+    - [分支定义](#分支定义)
+    - [提交规则](#提交规则)
+      - [提交讯息](#提交讯息)
+      - [提交内容](#提交内容)
+    - [PR 说明](#pr-说明)
+  - [测试用例贡献](#测试用例贡献)
+  - [致力于帮助任何事情](#致力于帮助任何事情)
+
+
+## 贡献插件
+
+Higress 基于 WASM 等方式具备了很好的可扩展性，具体贡献方式请参考此处[说明](https://github.com/alibaba/higress/tree/main/plugins)
+
+对于使用 GO 语言开发 WASM 插件，可以参考这篇[文档](../user/wasm-go.md)
+
 
 ## 报告安全问题
 
@@ -27,7 +43,7 @@ description: 如果您有兴趣攻克Higress，欢迎您。首先，我们非常
 
 因为我们在一个分布式的方式合作项目Higress，我们对此表示赞赏**编写良好**，**详细**，**明确**的问题报告。为了提高沟通效率，我们希望每个人都可以搜索您的问题是否在搜索列表中。如果发现它存在，请在现有问题下的评论中添加您的详细信息，而不要打开一个全新的issue。
 
-为了使问题详细信息尽可能地标准，我们为问题报告者设置了“ [问题模板](https://github.com/alibaba/higress/blob/develop/.github/ISSUE_TEMPLATE) ”。请**务必**按照说明填写模板中的字段。
+为了使问题详细信息尽可能地标准，我们为问题报告者设置了“ [问题模板](https://github.com/alibaba/higress/blob/main/.github/ISSUE_TEMPLATE) ”。请**务必**按照说明填写模板中的字段。
 
 在很多情况下，您可以打开一个问题：
 
@@ -65,10 +81,10 @@ description: 如果您有兴趣攻克Higress，欢迎您。首先，我们非常
 
 由于您已准备好通过PR改善Higress，因此建议您在此处查看PR规则。
 
-*   [工作准备](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#workspace-preparation)
-*   [分支定义](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#branch-definition)
-*   [提交规则](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#commit-rules)
-*   [PR说明](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#pr-description)
+*   [工作准备](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#工作区准备)
+*   [分支定义](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#分支定义)
+*   [提交规则](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#提交规则)
+*   [PR说明](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#pr说明)
 
 ### 工作准备
 
@@ -101,9 +117,9 @@ upstream   no-pushing (push)
 
 ### 分支定义
 
-现在，我们假设通过拉取请求所做的所有贡献都是针对Higress中的[分支发展](https://github.com/alibaba/higress/tree/develop)。在做出贡献之前，了解分支定义会有所帮助。
+现在，我们假设通过拉取请求所做的所有贡献都是针对Higress中的[主分支](https://github.com/alibaba/higress/tree/main)。在做出贡献之前，了解分支定义会有所帮助。
 
-作为贡献者，请再次记住，通过拉取请求进行的每个贡献都是为了分支发展。在Higress项目中，还有其他几个分支，我们通常称它们为发布分支（例如0.6.0、0.6.1），功能分支，修补程序分支和主分支。
+作为贡献者，请再次记住，通过拉取请求进行的每个贡献都是为了分支发展。在Higress项目中，还有其他几个分支，我们通常称它们为发布分支（例如0.6.0、0.6.1）\功能分支，修补程序分支和主分支。
 
 正式发布版本时，将有一个发布分支，并以版本号命名。
 
@@ -117,8 +133,8 @@ upstream   no-pushing (push)
 
 实际上，在Higress中，我们在提交时要认真对待两个规则：
 
-*   [提交讯息](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#commit-message)
-*   [提交内容](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#commit-content)
+*   [提交讯息](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#提交消息)
+*   [提交内容](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#提交内容)
 
 #### 提交讯息
 
@@ -145,23 +161,19 @@ upstream   no-pushing (push)
 
 *   避免在提交中进行很大的更改；
 *   每次提交均完整且可审查。
-*   提交时检查git config（`user.name`，`user.email`）以确保它与您的github ID相关联。
+*   提交时检查git config（`user.name`，`user.email`）以确保它与您的GitHub ID相关联。
 
-另外，在代码更改部分，我们建议所有贡献者都应阅读[Higress](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#code-style)的[代码样式](https://github.com/alibaba/higress/blob/develop/CONTRIBUTING.md#code-style)。
+另外，在代码更改部分，我们建议所有贡献者都应阅读[Higress](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#代码风格)的[代码样式](https://github.com/alibaba/higress/blob/main/CONTRIBUTING_CN.md#代码风格)。
 
 无论提交消息还是提交内容，我们都更加注重代码审查。
 
 ### PR 说明
 
-PR是更改Higress项目文件的唯一方法。为了帮助审稿人更好地实现目标，PR 说明不能太详细。我们鼓励贡献者遵循[PR模板](https://github.com/alibaba/higress/blob/develop/.github/PULL_REQUEST_TEMPLATE.md)完成请求请求。
+PR是更改Higress项目文件的唯一方法。为了帮助审稿人更好地实现目标，PR 说明不能太详细。我们鼓励贡献者遵循[PR模板](https://github.com/alibaba/higress/blob/main/.github/PULL_REQUEST_TEMPLATE.md)完成请求请求。
 
 ## 测试用例贡献
 
 任何测试用例都将受到欢迎。当前，Higress功能测试用例是高度优先的。
-
-*   对于单元测试，您需要创建一个`xxxTest.java`在同一模块的测试目录中命名的测试文件。推荐您使用junit5 UT框架
-
-*   对于集成测试，您可以将集成测试放在测试目录或Higress-test模块中。建议使用 mockito 测试框架。
 
 ## 致力于帮助任何事情
 
@@ -175,23 +187,3 @@ PR是更改Higress项目文件的唯一方法。为了帮助审稿人更好地�
 *   在GitHub之外倡导Higress技术;
 *   在Higress上写博客，等等。
 
-## 代码风格
-
-Higress代码样式符合阿里巴巴Java编码准则。
-
-### 指导方针
-
-[阿里巴巴Java编码指南](https://alibaba.github.io/Alibaba-Java-Coding-Guidelines/)
-
-### IDE插件安装（不必要）
-
-_如果要在编码时发现问题，则无需安装。_
-
-#### idea IDE
-
-[p3c-idea-plugin-install](https://github.com/alibaba/p3c/blob/master/idea-plugin/README.md)
-
-#### eclipse IDE
-
-[p3c-eclipse-plugin-install](https://github.com/alibaba/p3c/blob/master/eclipse-plugin/README.md)
-总之，**任何帮助都是贡献。**

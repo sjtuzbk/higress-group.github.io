@@ -4,11 +4,12 @@ export default {
     'zh-cn': {
         brand: {
             brandName: 'Higress',
+            brandLogoUrl: 'https://img.alicdn.com/imgextra/i1/O1CN01bmdCFQ1Zupzs0XIKc_!!6000000003255-55-tps-288-86.svg',
             briefIntroduction: '一个遵循开源Ingress/Gateway API标准，提供流量调度、服务治理、安全防护三合一的高集成、易使用、易扩展、热更新的下一代云原生网关。',
             buttons: [
                 {
                     text: '快速入门',
-                    link: '/zh-cn/docs/overview/what-is-higress.html',
+                    link: '/zh-cn/docs/user/quickstart.html',
                     type: 'primary',
                 },
                 {
@@ -18,15 +19,18 @@ export default {
                 },
             ],
             versionNote: {
-                text: 'Release Note of 0.5.0',
-                link: 'https://github.com/alibaba/higress/releases/tag/v0.5.0',
+                text: 'Release Note of 0.6.0',
+                link: 'https://github.com/alibaba/higress/releases/tag/v0.6.0',
             },
-            releaseDate: 'Released on Nov 12, 2022',
+            releaseDate: 'Released on Jan 19, 2023',
         },
         introduction: {
             title: 'Higress 是什么？',
             desc: 'Higress是基于阿里内部两年多的Envoy Gateway实践沉淀，以开源Istio + Envoy为核心构建的下一代云原生网关，实现了流量调度 + 服务治理 + 安全防护三合一的高集成能力，深度集成Dubbo、Nacos、Sentinel等微服务技术栈，能够为您带来低成本的网关部署运维及高性能、易使用、易扩展、功能丰富的一站式网关解决方案。',
-            img: 'https://img.alicdn.com/imgextra/i2/O1CN01Tm5Bi51dQqVvZABEp_!!6000000003731-2-tps-2396-1214.png',
+            img: 'https://img.alicdn.com/imgextra/i4/O1CN01goCCMC1HBLZend9Gl_!!6000000000719-2-tps-3201-1561.png',
+        },
+        landscape:{
+            title: '微服务生态全景图',
         },
         features: {
             title: '特色功能',
@@ -39,7 +43,7 @@ export default {
                 {
                   icon: 'feature-2',
                   title: '生产等级',
-                  content: ['脱胎于阿里巴巴生产验证的内部产品，经历双十一洪峰锤炼，具备企业级SLA的开源产品'],
+                  content: ['脱胎于阿里巴巴生产验证的内部产品，经历双十一洪峰锤炼，企业级的开源产品'],
                 },
                 {
                   icon: 'feature-3',
@@ -74,20 +78,24 @@ export default {
                 'https://img.alicdn.com/imgextra/i3/O1CN01pH2InM1iuDzpDxxox_!!6000000004472-0-tps-228-82.jpg' ,
                 'https://img.alicdn.com/imgextra/i3/O1CN013OMegK1xQCGX3CQNQ_!!6000000006437-0-tps-178-88.jpg' ,
                 'https://img.alicdn.com/imgextra/i1/O1CN01vrxF2I1rfs7rihLdy_!!6000000005659-0-tps-310-160.jpg' ,
+                'https://img.alicdn.com/imgextra/i1/O1CN01638eOX1ZcW9bTIID4_!!6000000003215-2-tps-700-394.png',
+                'https://img.alicdn.com/imgextra/i2/O1CN01T8c4by29tlErCcjHw_!!6000000008126-2-tps-170-170.png',
+                'https://img.alicdn.com/imgextra/i2/O1CN01j9lDmk1J7LLkD9jcJ_!!6000000000981-2-tps-2019-770.png',
             ],
         },
         community: {
             title: '搭把手，共建Higress',
             list: [
-                'https://img.alicdn.com/imgextra/i4/O1CN01lP4p411R49V3tQpFH_!!6000000002057-0-tps-1062-1410.jpg' ,
-                'https://img.alicdn.com/imgextra/i1/O1CN01UfZyN31zNZE4P1cES_!!6000000006702-0-tps-1008-1240.jpg' ,
+              'https://img.alicdn.com/imgextra/i4/O1CN01lP4p411R49V3tQpFH_!!6000000002057-0-tps-1062-1410.jpg' ,
+              'https://img.alicdn.com/imgextra/i3/O1CN01RkvQ3J1WMXUBDJ2y6_!!6000000002774-2-tps-1056-1371.png' ,              
             ],
         },
     },
     'en-us': {
         brand: {
             brandName: 'Higress',
-            briefIntroduction: 'Higress is ...',
+            brandLogoUrl: 'https://img.alicdn.com/imgextra/i1/O1CN01bmdCFQ1Zupzs0XIKc_!!6000000003255-55-tps-288-86.svg',
+            briefIntroduction: "Higress is a next-generation cloud-native gateway based on Alibaba's internal gateway practices.",
             buttons: [
                 {
                     text: 'Get Started',
@@ -101,54 +109,57 @@ export default {
                 },
             ],
             versionNote: {
-                text: 'Release Note of 0.5.0',
-                link: 'https://github.com/alibaba/higress/releases/tag/v0.5.0',
+                text: 'Release Note of 0.6.0',
+                link: 'https://github.com/alibaba/higress/releases/tag/v0.6.0',
             },
-            releaseDate: 'Released on Nov 1, 2022',
+            releaseDate: 'Released on Jan 19, 2023',
         },
         introduction: {
             title: 'What is Higress?',
-            desc: 'Higress is ...',
-            img: 'https://img.alicdn.com/imgextra/i2/O1CN01Tm5Bi51dQqVvZABEp_!!6000000003731-2-tps-2396-1214.png',
+            desc: 'Powered by Istio and Envoy, Higress realizes the integration of the triple gateway architecture of traffic gateway, microservice gateway and security gateway, thereby greatly reducing the costs of deployment, operation and maintenance.',
+            img: 'https://img.alicdn.com/imgextra/i4/O1CN01goCCMC1HBLZend9Gl_!!6000000000719-2-tps-3201-1561.png',
+        },
+        landscape:{
+            title: 'microservice ecosystem landscape',
         },
         features: {
             title: 'Feature List',
             list: [
                 {
                     icon: 'feature-1',
-                    title: 'XXX1',
-                    content: 'XXX1',
+                    title: 'Easy to use',
+                    content: 'Provide one-stop gateway solutions for traffic scheduling, service management, and security protection, support Console, K8s Ingress, and Gateway API configuration methods, and also support HTTP to Dubbo protocol conversion, and easily complete protocol mapping configuration.',
                 },
                 {
                     icon: 'feature-2',
-                    title: 'XXX2',
-                    content: 'XXX2.',
+                    title: 'Production grade',
+                    content: "An internal product that was born out of Alibaba's production and verification, experienced the peak of Double Eleven, and an enterprise-level open source product",
                 },
                 {
                     icon: 'feature-3',
-                    title: 'XXX3',
-                    content: 'XXX3.',
+                    title: 'Easy to expand',
+                    content: 'Provides Wasm, Lua, and out-of-process  plug-in extension mechanisms, so that multi-language plug-in writing is no longer an obstacle. The granularity of plug-in effectiveness supports not only the global level, domain name level, but also fine-grained routing level',
                 },
                 {
                     icon: 'feature-4',
-                    title: 'XXX4',
-                    content: 'XXX4.',
+                    title: 'Dynamic hot update',
+                    content: 'Get rid of the traffic jitter caused by reload at the bottom, the configuration change takes effect in milliseconds and the business is not affected, the Wasm plug-in is hot updated and the traffic is not damaged',
                 },
                 {
                     icon: 'feature-5',
-                    title: 'XXX5',
-                    content: 'XXX5',
+                    title: 'Smooth upgrade',
+                    content: 'Compatible with 80%+ usage scenarios of Nginx Ingress Annotation, and provides more feature-rich annotations, easy to handle Nginx Ingress migration in one step',
                 },
                 {
                     icon: 'feature-6',
-                    title: 'XXX6',
-                    content: 'XXX6.',
+                    title: 'Security',
+                    content: 'Provides JWT, OIDC, custom authentication and authentication, deeply integrates open source web application firewall.',
                 },
             ]
         },
         users: {
             title: 'Who is using Higress?',
-            desc: <span>请在 <a rel="noopener noreferrer" target="_blank"
+            desc: <span> Please provide information on <a rel="noopener noreferrer" target="_blank"
                               href="https://github.com/alibaba/higress/issues/1246">Wanted: who&#39;s using Higress</a> to help improving Higress better.</span>,
             list: [
                 'https://img.alicdn.com/imgextra/i1/O1CN01TleQq128FAP8POtL5_!!6000000007902-2-tps-241-42.png' ,
@@ -157,13 +168,16 @@ export default {
                 'https://img.alicdn.com/imgextra/i3/O1CN01pH2InM1iuDzpDxxox_!!6000000004472-0-tps-228-82.jpg' ,
                 'https://img.alicdn.com/imgextra/i3/O1CN013OMegK1xQCGX3CQNQ_!!6000000006437-0-tps-178-88.jpg' ,
                 'https://img.alicdn.com/imgextra/i1/O1CN01vrxF2I1rfs7rihLdy_!!6000000005659-0-tps-310-160.jpg' ,
+                'https://img.alicdn.com/imgextra/i1/O1CN01638eOX1ZcW9bTIID4_!!6000000003215-2-tps-700-394.png',
+                'https://img.alicdn.com/imgextra/i2/O1CN01T8c4by29tlErCcjHw_!!6000000008126-2-tps-170-170.png',
+                'https://img.alicdn.com/imgextra/i2/O1CN01j9lDmk1J7LLkD9jcJ_!!6000000000981-2-tps-2019-770.png',
             ],
         },
         community: {
           title: 'community',
           list: [
               'https://img.alicdn.com/imgextra/i4/O1CN01lP4p411R49V3tQpFH_!!6000000002057-0-tps-1062-1410.jpg' ,
-              'https://img.alicdn.com/imgextra/i1/O1CN01UfZyN31zNZE4P1cES_!!6000000006702-0-tps-1008-1240.jpg' ,
+              'https://img.alicdn.com/imgextra/i3/O1CN01RkvQ3J1WMXUBDJ2y6_!!6000000002774-2-tps-1056-1371.png' ,
           ],
       },
     },

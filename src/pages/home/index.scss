@@ -304,6 +304,18 @@
       }
     }
   }
+  .msemap-section{
+    .msemap-container{
+      h3{
+        font-family: Avenir-Medium;
+        font-weight: 700;
+        font-size: 36px;
+        color: #333;
+        text-align: center;
+      }
+    }
+  }
+
   .feature-section {
     background: #F9FAFA;
     .feature-container {
@@ -488,4 +500,5 @@
       padding-right: 20px;
     }
   }
+
 }

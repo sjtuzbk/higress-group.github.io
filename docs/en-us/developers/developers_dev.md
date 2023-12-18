@@ -17,6 +17,9 @@ This page shows Higress developers and continues to expand. The list is not prio
 | Yang Fan     | [SpecialYang](https://github.com/SpecialYang) | Alibaba        |
 | Yiqun Ling   | [Lynskylate](https://github.com/johnlanni) | Alibaba        |
 | Bingkun Zhao | [sjtuzbk](https://github.com/johnlanni) | Alibaba        |
+| Xunzhuo Liu | [Xunzhuo](https://github.com/Xunzhuo) | Tencent        |
+| Yiquan Dong | [CH3CHO](https://github.com/CH3CHO) | Trip.com        |
+| Qianglin Li | [Charlie17Li](https://github.com/Charlie17Li) | ZJU-SEL        |
 
 ## Higress Developer Roles
 
